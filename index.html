@@ -4,13 +4,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo CI/CD</title>
-</head>
-<body>
-    <h1>CI/CD tu dong cap nhat thanh cong!</h1>
-    <h2>Website CI/CD dau tien</h2>
+    <title>Trang cá nhân | Huỳnh Long</title>
 
-    <p>Day la project HTML cua toi.</p>
-    <p>Website duoc deploy tu dong bang GitHub Actions.</p>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6fb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 17px;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+        }
+
+        h2 {
+            color: #2563eb;
+            margin-bottom: 15px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skills span {
+            background: #e8efff;
+            color: #2563eb;
+            padding: 9px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .contact p {
+            margin: 8px 0;
+        }
+
+        footer {
+            background: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Xin chào, tôi là Huỳnh Long</h1>
+        <p>Chào mừng bạn đến với trang web cá nhân của tôi!</p>
+    </header>
+
+    <nav>
+        <a href="#about">Giới thiệu</a>
+        <a href="#skills">Kỹ năng</a>
+        <a href="#contact">Liên hệ</a>
+    </nav>
+
+    <div class="container">
+
+        <section class="card" id="about">
+            <h2>Giới thiệu bản thân</h2>
+            <p>
+                Xin chào! Tôi là Phạm Huỳnh Long, hiện đang là sinh viên
+                ngành Công nghệ thông tin.
+            </p>
+            <p>
+                Tôi yêu thích công nghệ, lập trình và luôn mong muốn
+                học hỏi những kiến thức mới để phát triển bản thân.
+            </p>
+        </section>
+
+        <section class="card" id="skills">
+            <h2>Kỹ năng</h2>
+            <div class="skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>C++</span>
+                <span>C#</span>
+                <span>SQL Server</span>
+                <span>Git & GitHub</span>
+            </div>
+        </section>
+
+        <section class="card contact" id="contact">
+            <h2>Thông tin liên hệ</h2>
+            <p><strong>Họ tên:</strong> Phạm Huỳnh Long</p>
+            <p><strong>Email:</strong> your-email@example.com</p>
+            <p><strong>GitHub:</strong>
+                <a href="https://github.com/phamlong270906-netizen"
+                   target="_blank">Trang GitHub của tôi</a>
+            </p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Phạm Huỳnh Long - Trang web cá nhân</p>
+    </footer>
+
 </body>
 </html>
